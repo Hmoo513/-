@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أذكاري</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:system-ui;background:#f5fbf8;color:#0f2b24}
+header{background:linear-gradient(135deg,#0d8a6a,#0fb28f);color:#fff;padding:30px 20px;text-align:center;border-radius:0 0 28px 28px}
+.container{max-width:720px;margin:18px auto;padding:0 14px}
+.card{background:#fff;border-radius:18px;padding:16px;margin:12px 0;box-shadow:0 6px 20px rgba(0,0,0,.06)}
+.card h3{color:#0d8a6a}
+.zikr{font-size:20px;line-height:1.8}
+.btn{background:#0d8a6a;color:#fff;border:0;border-radius:999px;padding:12px 20px}
+.tabs{display:flex;gap:8px;overflow:auto}
+.tabs button{border:1px solid #d8ebe5;background:#fff;padding:8px 14px;border-radius:999px}
+.tabs button.active{background:#0d8a6a;color:#fff}
+</style>
+</head>
+<body>
+<header><h1>📿 أذكاري</h1><p>أذكار الصباح والمساء</p></header>
+<div class="container">
+<div class="card"><h3>آية الكرسي</h3><div class="zikr">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ</div></div>
+<div class="card"><h3>سبحان الله وبحمده</h3><div class="zikr">سُبْحَانَ اللهِ وَبِحَمْدِهِ (100 مرة)</div><button class="btn">تسبيح</button></div>
+<div class="card"><h3>الاستغفار</h3><div class="zikr">أَسْتَغْفِرُ اللهَ العظيم (100 مرة)</div></div>
+<div class="card" style="text-align:center"><h3>السبحة الإلكترونية</h3><div style="font-size:50px" id="c">0</div><button class="btn" onclick="c.innerText=parseInt(c.innerText)+1">سبح</button> <button class="btn" style="background:#eef8f4;color:#0d8a6a" onclick="c.innerText=0">تصفير</button></div>
+</div>
+</body>
+</html>
